@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>CTI-联系我们</title>
+    	<meta name="description" content="CTI">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/font-awesome.css">
+        <link rel="stylesheet" href="../css/animate.css">
+        <link rel="stylesheet" href="../css/misc.css">
+        <link rel="stylesheet" href="../css/header_style.css">
+        <link rel="stylesheet" href="../css/style.css">
+        
+        <link rel="stylesheet" href="css/contact.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+        <!--[if IE]>
+			<script src="js/html5.js"></script>
+		<![endif]-->
+        <div class="main-header hidden-xs">
+
+            <div class="header_style"> 
+                <!-- start h_logo -->
+                <div class="logo">
+                    <h1><a href="../index.html">CTI</a></h1>
+                </div>
+                <!-- start h_menu -->
+                <!--<div class="h_menu">
+                    <ul class="flexy-menu thick orange menu-first hidden-sm hidden-xs">
+                        <li><a href="#services" class="scroll">项目</a></li>
+                        <li><a href="#projects" class="scroll">目的地</a> </li>
+                        <li><a href="#our-team" class="scroll">了解我们</a></li>
+                        <li><a href="#<div class="container" id="contact_footer">" class="scroll">联系我们</a></li>
+                    </ul>
+                </div>-->
+                <!-- end h_menu -->
+                <div class="clear"> </div>
+            </div>
+        </div>    
+
+        <div class="site-slider">
+            <div class="slider">
+                <div class="flexslider">
+                    <ul class="slides menu-first">
+                        <li>
+                            <div class="overlay"></div>
+                            <img src="../images/slide1.jpg" alt="">
+                            <div class="slider-caption">
+                                <h2>您在美国的家人</h2>
+                                <p>让我们帮助您规划独一无二的旅行</p>
+                                <a href="#contact_footer" class="slider-btn scroll hidden-xs">如何联系我们</a>    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay"></div>
+                            <img src="../images/slide2.jpg" alt="">
+                            <div class="slider-caption">
+                                <h2>您在美国的家人</h2>
+                                <p>让我们帮助您规划独一无二的旅行</p>
+                                <a href="#contact_footer" class="slider-btn scroll hidden-xs">如何联系我们</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay"></div>
+                            <img src="../images/slide3.jpg" alt="">
+                            <div class="slider-caption">
+                                <h2>您在美国的家人</h2>
+                                <p>让我们帮助您规划独一无二的旅行</p>
+                                <a href="#contact_footer" class="slider-btn scroll hidden-xs">如何联系我们</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- /.flexslider -->
+            </div> <!-- /.slider -->
+        </div>
+		
+		<section id="contact">
+        
+        <header>
+
+            <h1>联系我们</h1>
+            <h4>留下您的联系方式，我们将有专人在24小时内联系您！</h4>
+
+        </header>
+
+        <mark id="message" style="display: none;"></mark>
+        <div id="mod_left">
+            <form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
+
+                <fieldset>
+
+                    <legend>联系方式详情</legend>
+
+                    <div>
+                        <label for="name" accesskey="U">您的姓名</label>
+                        <input name="name" type="text" id="name" placeholder="输入您的姓名" required="required">
+                    </div>
+                    <div>
+                        <label for="email" accesskey="E">Email地址</label>
+                        <input name="email" type="email" id="email" placeholder="输入您的Email地址" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required">
+                    </div>
+
+                    <div>
+                        <label for="phone" accesskey="P">手机/座机号码</small></label>
+                        <input name="phone" type="tel" id="phone" size="30" placeholder="输入您的联系电话" required="required">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>您的需求</legend>
+
+                    <div>
+                        <label for="subject" accesskey="S">选择您的咨询类型</label>
+                        <select name="subject" id="subject" required="required" class="error">
+                            <option value=""></option>
+                            <option value="go">定制旅行</option>
+                            <option value="ask">业务咨询</option>
+                            <option value="co">加盟合作</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="comments" accesskey="C">您的需求</label>
+                        <textarea name="comments" cols="40" rows="3" id="comments" placeholder="可以简要说明需要定制的旅行计划" spellcheck="true" required="required" class="error"></textarea>
+                    </div>
+                <fieldset>
+
+                    <legend>请输入下面的验证码</legend>
+                    
+                    <label for="verify" accesskey="V" class="verify"><img src="image.php" alt="Verification code" onclick="javascript:this.src='http://www.ctigloble.com/contact/image.php'" title="看不清?点击图片刷新"></label>
+                    <input name="verify" type="text" id="verify" size="6" required="required" style="width: 50px;" title="证明你不是一个机器人...">
+
+
+                </fieldset>
+                
+                <input type="submit" name="submit" class="submit" id="submit" value="Submit">
+
+            </form>
+        </div>
+        <div id="mod_right"><img src="images/flow.png"/>
+        </div>
+    </section>
+
+
+        <div class="content-section" id="our-team">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>了解我们</h2>
+                        <p>我们的团队以及我们的优势</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="footer-item col-lg-3 col-md-6 col-sm-12">
+                        <a href="about">
+                            <div class="portfolio-thumb">
+                                <img src="../images/f1.jpg" alt="">
+                                <div class="text-center text-contrast f-container">
+                                    <div class="f-middle">
+                                        我们的服务
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer-item col-lg-3 col-md-6 col-sm-12">
+                        <a href="#">
+                            <div class="portfolio-thumb">
+                                <img src="../images/f2.jpg" alt="">
+                                <div class="text-center text-contrast f-container">
+                                    <div class="f-middle">
+                                        我们的团队
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer-item col-lg-3 col-md-6 col-sm-12">
+                        <a href="#">
+                            <div class="portfolio-thumb">
+                                <img src="../images/f3.jpg" alt="">
+                                <div class="text-center text-contrast f-container">
+                                    <div class="f-middle">
+                                        分享旅行
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer-item col-lg-3 col-md-6 col-sm-12">
+                        <a href="#">
+                            <div class="portfolio-thumb">
+                                <img src="../images/f4.jpg" alt="">
+                                <div class="text-center text-contrast f-container">
+                                    <div class="f-middle">
+                                        我们的优势
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- /.container -->
+        </div> <!-- /#our-team -->
+        <div class="container" id="contact_footer">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 hidden-xs">
+                  <div class="clearfix">
+                    <div class="select row-space-2">
+                      <select class="language-selector">
+                          <option value="en">English</option>
+                          <option value="zh" selected="">中文 (简体)</option>
+                      </select>
+                    </div>
+                    <div class="depature_btn">
+                        <a href="#contact"><input class="button red" type="button" value="留言定制您的旅行"></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2 col-md-offset-1 hidden-xs">
+                  <h4>公司信息</h4>
+                  <ul>
+                    <li><a href="about" class="link-contrast">公司简介</a></li>
+                    <li><a href="#" class="link-contrast">政策</a></li>
+                    <li><a href="#" class="link-contrast">条款与隐私</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-2">
+                  <h4>联系我们</h4>
+                  <ul>
+                    <li class="link-contrast">地址 :<br />
+                    86 Greenwood St. Willimantic, USA, 06226</li>
+                    <li class="link-contrast">邮箱 :<br />
+                    ctizy2014@163.com</li>
+                    <li class="link-contrast">电话 :<br />
+                    +86 15184291060</li>
+                  </ul>
+                </div>
+
+                <div class="col-md-2">
+                  <h4>微信二维码</h4>
+                  <img src="../images/wechat_code.png" width="190px"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="social-icons">
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-weibo"></a></li>
+                        <li><a href="#" class="fa fa-qq"></a></li>
+                        <li><a href="#" class="fa fa-wechat"></a></li>
+                    </ul>
+                    <br />
+                    <a href="http://blog.ucare.me" target="_blank">Copyright © 2015 Chuck Studio<br />C&amp;T International Cultural Communiaction LLC</a>
+                </div> 
+                <div class="col-md-12 hidden-xs text-right">
+                    <a href="#top" id="go-top">回到顶部</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-bar">
+            <a href="" class="icon-chat">微信<div class="chat-tips"><i></i><img style="width:158px;height:158px;" src="../images/wechat_code.png" alt="微信订阅号"></div></a> 
+            <a href="http://www.ctigloble.com/contact/" class="icon-mail">留言定制</a> 
+        </div>
+        <script src="../js/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.contact.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?d2668f64a50fe2069b1454c020200d06";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    </body>
+</html>
